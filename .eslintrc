@@ -3,10 +3,9 @@
         "next",
         "next/core-web-vitals",
         "plugin:react/recommended",
-        "plugin:prettier/recommended",
-        "plugin:@typescript-eslint/recommended"
+        "plugin:prettier/recommended"
     ],
-    "plugins": ["react", "prettier", "@typescript-eslint"],
+    "plugins": ["react", "prettier"],
     "rules": {
         // Don't need to explicitly import React when using Next.js
         "react/react-in-jsx-scope": "off"
