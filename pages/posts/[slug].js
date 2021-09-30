@@ -1,4 +1,3 @@
-import NextLink from 'next/link';
 import Layout from '../../components/layout';
 import PageTitle from '../../components/page-title';
 import PageSubtitle from '../../components/page-subtitle';
@@ -18,11 +17,7 @@ export default function PostPage({ post }) {
 }
 
 export const getStaticPaths = async () => {
-    const notion = new Client({
-        auth: process.env.NOTION_SECRET,
-    });
-
-    const data = await notion.blocks.children.list({
+    const data = await notion.client.blocks.children.list({
         block_id: process.env.NOTION_PAGE_ID,
     });
 
