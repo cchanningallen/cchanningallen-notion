@@ -8,7 +8,8 @@
     "plugins": ["react", "prettier"],
     "rules": {
         // Don't need to explicitly import React when using Next.js
-        "react/react-in-jsx-scope": "off"
+        "react/react-in-jsx-scope": "off",
+        "react/prop-types": "off"
     },
     "globals": {
         // Don't need to explicitly import React when using Next.js
